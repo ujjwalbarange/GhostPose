@@ -1,0 +1,6 @@
+{
+  "name": "GhostPose",
+  "description": "Camera companion utility that overlays reference pose images with adjustable opacity, touch passthrough, and pose library management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-high": "#e7e8e9", "primary-fixed-dim": "#c4c6cd", "on-tertiary-fixed-variant": "#005236", "on-tertiary-fixed": "#002113", "tertiary-fixed": "#6ffbbe", "surface-container-highest": "#e1e3e4", "on-surface": "#191c1d", "inverse-surface": "#2e3132", "on-secondary": "#ffffff", "on-primary-fixed-variant": "#44474c", "on-primary-fixed": "#191c21", "tertiary": "#000000", "primary-container": "#191c21", "background": "#f8f9fa", "surface-tint": "#5c5e64", "on-secondary-fixed": "#121c28", "on-error": "#ffffff", "primary-fixed": "#e1e2e9", "on-secondary-container": "#596372", "surface-container-lowest": "#ffffff", "on-primary-container": "#81848a", "on-error-container": "#93000a", "surface": "#f8f9fa", "outline": "#76777b", "outline-variant": "#c6c6cb", "tertiary-fixed-dim": "#4edea3", "secondary": "#555f6d", "on-background": "#191c1d", "surface-variant": "#e1e3e4", "on-surface-variant": "#45474b", "secondary-fixed": "#d9e3f4", "inverse-on-surface": "#f0f1f2", "surface-container-low": "#f3f4f5", "surface-dim": "#d9dadb", "on-primary": "#ffffff", "tertiary-container": "#002113", "surface-bright": "#f8f9fa", "on-tertiary-container": "#009668", "secondary-fixed-dim": "#bdc7d8", "inverse-primary": "#c4c6cd", "error-container": "#ffdad6", "primary": "#000000", "surface-container": "#edeeef", "on-secondary-fixed-variant": "#3e4755", "secondary-container": "#d6e0f1", "error": "#ba1a1a", "on-tertiary": "#ffffff" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "space-xl": "2rem", "space-xs": "0.25rem", "gutter": "0.75rem", "margin": "1rem", "space-lg": "1.25rem", "space-md": "0.875rem", "space-sm": "0.5rem" }, fontFamily: { "headline-lg-mobile": ["Inter"], "body-lg": ["Inter"], "label-sm": ["Inter"], "headline-sm": ["Inter"], "headline-md": ["Inter"], "headline-lg": ["Inter"], "display": ["Inter"], "body-sm": ["Inter"], "label-md": ["Inter"], "body-md": ["Inter"], "label-lg": ["Inter"] }, fontSize: { "headline-lg-mobile": ["24px", { lineHeight: "32px", letterSpacing: "-0.02em", fontWeight: "700" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.05em", fontWeight: "700" }], "headline-sm": ["16px", { lineHeight: "24px", fontWeight: "600" }], "headline-md": ["20px", { lineHeight: "28px", letterSpacing: "-0.015em", fontWeight: "600" }], "headline-lg": ["30px", { lineHeight: "38px", letterSpacing: "-0.02em", fontWeight: "700" }], "display": ["44px", { lineHeight: "52px", letterSpacing: "-0.03em", fontWeight: "700" }], "body-sm": ["13px", { lineHeight: "18px", fontWeight: "400" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }] } } } }</script><style>@layer base { html, body { min-height: 100%; margin: 0; padding: 0; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">motion_photos_on</span></div><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface uppercase font-bold">GhostPose</span></div><div class="flex items-center gap-space-sm"><span class="font-label-md text-label-md text-on-surface-variant font-medium">Poses</span><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full pb-8">
+<!-- Sub-Header Utility Actions -->
+<div class="px-margin pt-space-xs pb-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface tracking-tight">Pose Hub</span>
+<span class="inline-flex items-center justify-center px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">34 poses</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Paste URL reference" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container transition-colors text-on-surface shadow-sm" type="button">
+<span class="material-symbols-outlined text-[17px]">link</span>
+<span class="font-label-md text-label-md">Paste Link</span>
+</button>
+<button aria-label="Settings" class="w-8 h-8 rounded-full bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+</div>
+<!-- Quick Action Banner -->
+<div class="px-margin mb-space-lg">
+<div class="relative overflow-hidden rounded-lg bg-surface-container-lowest p-space-lg shadow-sm">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-surface-container-high/60 pointer-events-none blur-xl"></div>
+<div class="relative z-10 flex flex-col gap-space-xs">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Live Ghosting</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight">Ready to shoot?</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-[280px]">
+          Pick any reference pose to overlay with live opacity control directly inside your camera view.
+        </p>
+<div class="pt-space-sm flex items-center gap-space-sm">
+<button class="inline-flex items-center justify-center gap-2 h-[46px] px-6 rounded-full bg-primary text-on-primary hover:bg-inverse-surface active:scale-[0.98] transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">filter_center_focus</span>
+<span class="font-label-lg text-label-lg">Launch Overlay</span>
+</button>
+<button aria-label="Upload reference photo" class="w-[46px] h-[46px] rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container flex items-center justify-center active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">add_photo_alternate</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Category Filter Pills (Horizontal Scroll) -->
+<div class="mb-space-md">
+<div class="flex items-center gap-space-xs overflow-x-auto px-margin no-scrollbar py-1">
+<button class="filter-chip shrink-0 px-4 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-sm transition-transform active:scale-95" type="button">
+        All Poses
+      </button>
+<button class="filter-chip shrink-0 px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md hover:text-on-surface hover:bg-surface-container-low transition-colors shadow-sm" type="button">
+        Favorites
+      </button>
+<button class="filter-chip shrink-0 px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md hover:text-on-surface hover:bg-surface-container-low transition-colors shadow-sm" type="button">
+        Portraits
+      </button>
+<button class="filter-chip shrink-0 px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md hover:text-on-surface hover:bg-surface-container-low transition-colors shadow-sm" type="button">
+        Full Body
+      </button>
+<button class="filter-chip shrink-0 px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md hover:text-on-surface hover:bg-surface-container-low transition-colors shadow-sm" type="button">
+        Aesthetic
+      </button>
+<button class="filter-chip shrink-0 px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md hover:text-on-surface hover:bg-surface-container-low transition-colors shadow-sm" type="button">
+        Recent
+      </button>
+</div>
+</div>
+<!-- Pose Cards Grid -->
+<div class="px-margin">
+<div class="grid grid-cols-2 gap-space-md">
+<!-- Card 1 -->
+<div class="group relative flex flex-col rounded-DEFAULT bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Editorial flash mirror selfie fashion pose, dynamic hand holding smartphone close to face, soft clean shadows, minimalist interior backdrop, neutral Scandinavian palette, crisp studio light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1Q5J_2hjwSgpaI66ABdUJpU0wbNP299g1uBHdGqr1vJECakfJd-pa9k-q6DHVSirPjbYVSAJZMrZSy25xZSV-rvx5_zOAid8mft836y80iNVhFc_U0UXYaBJaVY9qLuTMH1TbmhClbp5a2avgWtJwHW29HgishtaKtryNUdeJojsHosOoPHUsTZGmNY_MU88dkSYYvMQlpCrn0VBc8TfWurjqZKSRREJTkDc-qkFl"/>
+<div class="absolute top-2 right-2 flex items-center gap-1">
+<button aria-label="Favorite pose" class="w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-primary shadow-sm hover:scale-110 active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[17px]" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</button>
+</div>
+<div class="absolute bottom-2 left-2 right-2 flex justify-between items-center">
+<span class="px-2 py-0.5 rounded-full bg-inverse-surface/75 backdrop-blur-md text-inverse-on-surface font-label-sm text-label-sm">
+              0.5x Wide
+            </span>
+<button aria-label="Launch overlay for 0.5x Flash Mirror" class="h-7 px-2.5 rounded-full bg-surface-container-lowest/95 backdrop-blur-md text-on-surface font-label-sm text-label-sm flex items-center gap-1 shadow-sm active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[14px]">motion_photos_on</span>
+<span>Overlay</span>
+</button>
+</div>
+</div>
+<div class="p-space-sm flex flex-col gap-0.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">0.5x Flash Mirror</h3>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Added 2h ago</span>
+<span class="material-symbols-outlined text-[16px] text-outline">tune</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative flex flex-col rounded-DEFAULT bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Golden hour outdoor portrait reference, woman casually resting chin on hand against warm sunset glow, soft rim lighting, natural relaxed posture, clean warm tones with muted palette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkni0fyiTYUHWRHUGwV0N75Pk5iARJd3FDbY23wFsEK3Z3hQOLoKvmviacOOtFzPksRX3TwDwTk47IlVoLF2tOGye1tU5lXx3EvkFYdJSVIUG6hnKavjKYEBxvwbinZB31__E02bOJTlfaw-_wrnvYUwDevfb71g8sikQEit0DKeOSnuOkpRJT2_8mh4gmFeMQ8n6XAmh6XzMm7d1ewnjoYoBdFciKrYW7ZcXRgfs8"/>
+<div class="absolute top-2 right-2 flex items-center gap-1">
+<button aria-label="Favorite pose" class="w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-primary shadow-sm hover:scale-110 active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[17px]" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</button>
+</div>
+<div class="absolute bottom-2 left-2 right-2 flex justify-between items-center">
+<span class="px-2 py-0.5 rounded-full bg-inverse-surface/75 backdrop-blur-md text-inverse-on-surface font-label-sm text-label-sm">
+              Outdoor
+            </span>
+<button aria-label="Launch overlay for Candid Golden Hour" class="h-7 px-2.5 rounded-full bg-surface-container-lowest/95 backdrop-blur-md text-on-surface font-label-sm text-label-sm flex items-center gap-1 shadow-sm active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[14px]">motion_photos_on</span>
+<span>Overlay</span>
+</button>
+</div>
+</div>
+<div class="p-space-sm flex flex-col gap-0.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Candid Golden Hour</h3>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Yesterday</span>
+<span class="material-symbols-outlined text-[16px] text-outline">tune</span>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative flex flex-col rounded-DEFAULT bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Low angle urban street style full body posture, relaxed wide stance walking towards camera, modern minimal architecture, monochrome streetwear, architectural clean background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEe3uLUzm9nzipL438uNw1R0iaNVYNWduLwhnzdxMNU3V8CmirpY106sKfJFLfU8g4A7EefuWhFhI252H5LsI_uPn5smgQ1VdfKcwBwExcYHR5irWC-qEoTs2GRTu-fWVVySF_h2aqHQHSjfgcgRinaz8hIFtAtiYaEz8HPgZHY4bQZQ_TmgzgGb8WuWK7ADIL6tpYd1ME8qCNnE9b6dLe2R7sqa_wchZXhUgdoWOB"/>
+<div class="absolute top-2 right-2 flex items-center gap-1">
+<button aria-label="Bookmark pose" class="w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-on-surface-variant shadow-sm hover:text-on-surface active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[17px]">bookmark_border</span>
+</button>
+</div>
+<div class="absolute bottom-2 left-2 right-2 flex justify-between items-center">
+<span class="px-2 py-0.5 rounded-full bg-inverse-surface/75 backdrop-blur-md text-inverse-on-surface font-label-sm text-label-sm">
+              Full Body
+            </span>
+<button aria-label="Launch overlay for Low Angle Streetwear" class="h-7 px-2.5 rounded-full bg-surface-container-lowest/95 backdrop-blur-md text-on-surface font-label-sm text-label-sm flex items-center gap-1 shadow-sm active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[14px]">motion_photos_on</span>
+<span>Overlay</span>
+</button>
+</div>
+</div>
+<div class="p-space-sm flex flex-col gap-0.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Low Angle Streetwear</h3>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Oct 24</span>
+<span class="material-symbols-outlined text-[16px] text-outline">tune</span>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group relative flex flex-col rounded-DEFAULT bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Side profile seated by modern cafe glass window, natural high key lighting, holding a ceramic coffee cup with gentle gaze, cinematic understated composition, soft neutral palette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADZX3rDr46a3-YFygGcwf_1wOtpvmUDv-QBvReJ8p_8mwFFr92yJCwbl_q95g_UHXhcZj6SnCr9EWLnjZHlZZEm7Fywx8HsZFLxRb5tY07h6-_7UJlc89Tt_qeH3ZlSsbLGKFE85OPwr31QjZP-TQyyxGLPcsOryug4N8oZxSj9_Wcfl1hwa9gm1cE_L6QabLThSbkbhUL_DgUqqdo1vWH7PGpYPDLiuOylFO3YHZZ"/>
+<div class="absolute top-2 right-2 flex items-center gap-1">
+<button aria-label="Favorite pose" class="w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-primary shadow-sm hover:scale-110 active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[17px]" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</button>
+</div>
+<div class="absolute bottom-2 left-2 right-2 flex justify-between items-center">
+<span class="px-2 py-0.5 rounded-full bg-inverse-surface/75 backdrop-blur-md text-inverse-on-surface font-label-sm text-label-sm">
+              Seated
+            </span>
+<button aria-label="Launch overlay for Cafe Window Silhouette" class="h-7 px-2.5 rounded-full bg-surface-container-lowest/95 backdrop-blur-md text-on-surface font-label-sm text-label-sm flex items-center gap-1 shadow-sm active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[14px]">motion_photos_on</span>
+<span>Overlay</span>
+</button>
+</div>
+</div>
+<div class="p-space-sm flex flex-col gap-0.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Cafe Window Silhouette</h3>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Oct 20</span>
+<span class="material-symbols-outlined text-[16px] text-outline">tune</span>
+</div>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="group relative flex flex-col rounded-DEFAULT bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Minimalist clean studio headshot with slight three-quarter head turn, crisp shoulder alignment, diffused softbox lighting on off-white textured backdrop, ultra-sharp details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6_wEXV0_kymuT512LKTsFY0a6obArANE18YxDZVg-SLYSbTrRyWyvakTOnyLPzOyXWyzq8SnP1qImYy6rX5XQdP2ysO2kigM4KcL_PiIowFPnec6C-_Gm8NdJKtl29a_9WZaTj7XdzZZiixva8g2YuGEg-VqWnTyzugIVnRLmzQVnDu9heqDytW7fdK8Hb8-dWuPXvWTl1VgXTTZw2Te-zHSficOJvJ02l0aduUOm"/>
+<div class="absolute top-2 right-2 flex items-center gap-1">
+<button aria-label="Bookmark pose" class="w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-on-surface-variant shadow-sm hover:text-on-surface active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[17px]">bookmark_border</span>
+</button>
+</div>
+<div class="absolute bottom-2 left-2 right-2 flex justify-between items-center">
+<span class="px-2 py-0.5 rounded-full bg-inverse-surface/75 backdrop-blur-md text-inverse-on-surface font-label-sm text-label-sm">
+              Studio
+            </span>
+<button aria-label="Launch overlay for Clean Headshot Angles" class="h-7 px-2.5 rounded-full bg-surface-container-lowest/95 backdrop-blur-md text-on-surface font-label-sm text-label-sm flex items-center gap-1 shadow-sm active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[14px]">motion_photos_on</span>
+<span>Overlay</span>
+</button>
+</div>
+</div>
+<div class="p-space-sm flex flex-col gap-0.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Clean Headshot Angles</h3>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Oct 18</span>
+<span class="material-symbols-outlined text-[16px] text-outline">tune</span>
+</div>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="group relative flex flex-col rounded-DEFAULT bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Artistic 35mm film slow-shutter motion blur portrait, subject turning playfully with hair movement, warm film grain and ambient urban evening glow, candid retro mood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRLfC7guC-0Q1zqhYDSOOIBX3FydFZOV-PJxSgVNvZJ5dc464-5ziFuxPOH3OmCD2orCRJiPp19vsqhvjesPBJfcUsvqOcLpCTbygvX9iwD5fa61azWXfo-9pPaVQmfT2diaBfaiknmSuLgawU2P34Pa6DQk7Ogqq2uK2afkkVEEA3lSCwCYVDkrKCT4E4IROCOgdyoE3fJvcugWpg16Y1X7Rdad13_w_qoT5jFpw0"/>
+<div class="absolute top-2 right-2 flex items-center gap-1">
+<button aria-label="Favorite pose" class="w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-primary shadow-sm hover:scale-110 active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[17px]" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</button>
+</div>
+<div class="absolute bottom-2 left-2 right-2 flex justify-between items-center">
+<span class="px-2 py-0.5 rounded-full bg-inverse-surface/75 backdrop-blur-md text-inverse-on-surface font-label-sm text-label-sm">
+              Motion
+            </span>
+<button aria-label="Launch overlay for Film Blur Motion" class="h-7 px-2.5 rounded-full bg-surface-container-lowest/95 backdrop-blur-md text-on-surface font-label-sm text-label-sm flex items-center gap-1 shadow-sm active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[14px]">motion_photos_on</span>
+<span>Overlay</span>
+</button>
+</div>
+</div>
+<div class="p-space-sm flex flex-col gap-0.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Film Blur Motion</h3>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Oct 15</span>
+<span class="material-symbols-outlined text-[16px] text-outline">tune</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive URL Paste / Drawer Trigger Floating Action -->
+<div class="fixed bottom-20 right-4 z-40">
+<button class="flex items-center gap-2 h-12 px-4 rounded-full bg-primary text-on-primary shadow-lg hover:bg-inverse-surface active:scale-95 transition-all" id="quick-add-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">add</span>
+<span class="font-label-md text-label-md pr-1">Import Pose</span>
+</button>
+</div>
+</div>
+<script>
+  // Simple micro-interactions for filter tabs and bookmark toggling
+  document.querySelectorAll('.filter-chip').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-chip').forEach(c => {
+        c.className = 'filter-chip shrink-0 px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md hover:text-on-surface hover:bg-surface-container-low transition-colors shadow-sm';
+      });
+      btn.className = 'filter-chip shrink-0 px-4 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-sm transition-transform active:scale-95';
+    });
+  });
+
+  document.querySelectorAll('button[aria-label*="Favorite"], button[aria-label*="Bookmark"]').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const icon = btn.querySelector('.material-symbols-outlined');
+      if (icon.textContent === 'bookmark') {
+        icon.textContent = 'bookmark_border';
+        icon.style.fontVariationSettings = "'FILL' 0";
+        btn.classList.remove('text-primary');
+        btn.classList.add('text-on-surface-variant');
+      } else {
+        icon.textContent = 'bookmark';
+        icon.style.fontVariationSettings = "'FILL' 1";
+        btn.classList.add('text-primary');
+        btn.classList.remove('text-on-surface-variant');
+      }
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.03)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-gutter"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] transition-colors text-primary font-semibold" data-path="poses" href="#"><span class="material-symbols-outlined text-[22px]">accessibility_new</span><span class="font-label-sm text-label-sm mt-space-xs">Poses</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] text-on-surface-variant transition-colors hover:text-on-surface" data-path="camera-tools" href="#"><span class="material-symbols-outlined text-[22px]">photo_camera</span><span class="font-label-sm text-label-sm mt-space-xs">Camera Tools</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] text-on-surface-variant transition-colors hover:text-on-surface" data-path="saved-profile" href="#"><span class="material-symbols-outlined text-[22px]">bookmark</span><span class="font-label-sm text-label-sm mt-space-xs">Saved / Profile</span></a></div></nav></body></html>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">GhostPose</string>
+    <string name="pose_hub_title">Pose Hub</string>
+    <string name="paste_link">Paste Link</string>
+    <string name="live_ghosting">LIVE GHOSTING</string>
+    <string name="ready_to_shoot">Ready to shoot?</string>
+    <string name="ready_to_shoot_subtitle">Pick any reference pose to overlay with live opacity control directly inside your camera view.</string>
+    <string name="launch_overlay">Launch Overlay</string>
+    <string name="import_pose">Import Pose</string>
+    <string name="overlay_action">Overlay</string>
+    <string name="save_reference_pose">Save Reference Pose</string>
+    <string name="save_pose_subtitle">Add this pose to your library for instant viewfinder overlay anytime.</string>
+    <string name="pose_name_label">Pose Name</string>
+    <string name="save_to_library">Save to Library</string>
+    <string name="discard_pose">Discard Pose</string>
+    <string name="overlay_controls">Overlay Controls</string>
+    <string name="guide_opacity">Guide Opacity</string>
+    <string name="lock_pose_passthrough">Lock Pose (Passthrough)</string>
+    <string name="passthrough_active">Passthrough Active</string>
+    <string name="taps_pass_to_shutter">Taps pass directly to shutter</string>
+    <string name="tap_viewfinder_to_shoot">Tap viewfinder anywhere to shoot</string>
+    <string name="overlay_permission_title">Overlay Permission Required</string>
+    <string name="overlay_permission_desc">GhostPose needs Display over other apps permission to project reference poses over your camera viewfinder with touch passthrough.</string>
+    <string name="grant_permission">Grant Overlay Permission</string>
+    <string name="notification_channel_name">GhostPose Active Overlay</string>
+    <string name="notification_title">GhostPose Overlay Active</string>
+    <string name="notification_text_locked">Locked (Passthrough) • Tap floating anchor to edit</string>
+    <string name="notification_text_edit">Edit Mode • Drag, pinch, or adjust opacity</string>
+</resources>
